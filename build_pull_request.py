@@ -114,6 +114,7 @@ def main():
         execute("%s remote set-url origin %s" %
                 (git_exe, os.environ['GIT_URL']))
         execute("%s status" % git_exe)
+        execute("%s checkout -b master" % git_exe)
 
         print_heading("Start the build...")
 
